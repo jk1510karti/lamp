@@ -18,6 +18,7 @@ sudo systemctl start mariadb # Root user password reset setup is not done yet
 
 # Restart the appserver
 sudo systemctl restart httpd
+sudo systemctl start firewalld
 
 # Enable firewal rule for both http and https. Just in case if we have to enable SSL later
 sudo firewall-cmd --permanent --zone=public --add-service=http
